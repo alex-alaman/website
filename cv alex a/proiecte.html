@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proiecte</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Charis+SIL:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="imagini/logo.png" sizes="100"></a>
+            <div class="nav-links" id = "navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="file:///C:/Users/alama/Desktop/VSCode/cv%20alex%20a/CV.html">HOME</a></li>
+                    <li><a href="file:///C:/Users/alama/Desktop/VSCode/cv%20alex%20a/proiecte.html">PROIECTE</a></li>
+                    <li><a href="file:///C:/Users/alama/Desktop/VSCode/cv%20alex%20a/About.html">DESPRE MINE</a></li>
+                    <li><a href="file:///C:/Users/alama/Desktop/VSCode/cv%20alex%20a/contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick = "showMenu()"></i>
+        </nav>
+        <h1>PROIECTELE MELE</h1>
+    </section>
+
+      <!--------Proiecte------->
+      <section class="proiecte">
+        <h1>Proiecte mele de alungul aniilor</h1>
+        <p>Salut! Aici o sa gasiti proiectele pe care le-am facut de-alungul timpului de cand<br> m-am decis sa invat programare :)</p>
+
+        <div class = "row">
+            <div class = "proiect-col">
+                <h3>Proiecte in C++</h3>
+                <p> Aici o sa gasiti proiecte facute in C++ utilizand IDE-ul CodeBlocks </p>
+            </div>
+            <div class = "proiect-col">
+                <h3>Proiecte in C</h3>
+                <p>Aici o sa gasiti proiecte facut in C prin intermediul terminalului Linux</p>
+            </div>
+            <div class = "proiect-col">
+                <h3>Proiecte in Python</h3>
+                <p>Aici o sa gasiti proiecte facute in Python utilizand IDE-ul Pycharm</p>
+            </div>
+        </div>
+    
+        <div class="comment-box">
+            <h3>Review Time</h3>
+            <form action="" class="comment-form">
+                <input type="text" placeholder="Nume: ">
+                <input type="email" placeholder="Email: ">
+                <textarea rows="5" placeholder="Review: "></textarea>
+                <button type="submit" class="hero-btn color-btn">Posteaza</button>
+            </form>
+        </div>
+    </section>
+
+   
+    <!--Footer-->
+    <section class="footer">
+        <h4>Fun Facts</h4>
+        <p>Acest site este facut complet de mine cu ajutorul tutorialelor pe <a href="https://www.youtube.com">Youtube</a><br> si nelipstiul combo <a href="https://www.google.com/?hl=en">Google</a> + <a href="https://stackoverflow.com">StackOverflow</a></p>
+        <div class="icons">
+            <a href = "https://www.facebook.com/alexalaman"><i class="fa fa-facebook"></i></a>
+            <a href = "https://www.instagram.com/alex_alaman"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/alex-alaman-0bb6001aa"><i class="fa fa-linkedin"></i></a>
+        </div>
+        <p>Made with <i class="fa fa-heart-o"></i> by Alex Alaman </p>
+    </section>
+
+    <!------ JavaScript pt meniu -------------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+</html>  

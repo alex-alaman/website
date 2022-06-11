@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Charis+SIL:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="imagini/logo.png" sizes="100"></a>
+            <div class="nav-links" id = "navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="file:///C:/Users/alama/Desktop/VSCode/cv%20alex%20a/CV.html">HOME</a></li>
+                    <li><a href="file:///C:/Users/alama/Desktop/VSCode/cv%20alex%20a/proiecte.html">PROIECTE</a></li>
+                    <li><a href="file:///C:/Users/alama/Desktop/VSCode/cv%20alex%20a/About.html">DESPRE MINE</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick = "showMenu()"></i>
+        </nav>
+        <h1>CONTACTEAZA-MA</h1>
+    </section>
+
+   <!----Contact---->
+   <section class="locatie">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.554545365174!2d24.2966292635092!3d45.44936113729375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x474ce2ca43d857f7%3A0x80ed73890824be52!2zNDXCsDI3JzAxLjIiTiAyNMKwMTcnNTUuNiJF!5e0!3m2!1sen!2sro!4v1654958316689!5m2!1sen!2sro" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+   </section>
+   <section class="contact-me">
+    <div class="row">
+        <div class="contact-col">
+            <div>
+                <i class="fa fa-home"></i>
+                <span>
+                    <h5>Strada Principala nr 4, Robesti</h5>
+                    <p>com. Caineni, jud. Valcea, Romania</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <span>
+                    <h5>+40 0757555718</h5>
+                    <p>hehehehehhe</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-envelope-o"></i>
+                <span>
+                    <h5>alamanalex03@gmail.com</h5>
+                    <p>hehehehehhe x2</p>
+                </span>
+            </div>
+        </div>
+        <div class="contact-col">
+            <form action="form-handler.php" method = "post">
+                <input type="text" name="name" placeholder="Nume:" required>
+                <input type="email" name="email" placeholder="Email:" required>
+                <input type="text" name ="subiect"  placeholder="Subiect:" required>
+                <textarea rows="8" name = "mesaj" placeholder="Mesaj:" required></textarea>
+                <button class="hero-btn color-btn">Trimite Mesaj</button>
+            </form>
+        </div>
+    </div>
+   </section>
+
+   
+    <!--Footer-->
+    <section class="footer">
+        <h4>Fun Facts</h4>
+        <p>Acest site este facut complet de mine cu ajutorul tutorialelor pe <a href="https://www.youtube.com">Youtube</a><br> si nelipstiul combo <a href="https://www.google.com/?hl=en">Google</a> + <a href="https://stackoverflow.com">StackOverflow</a></p>
+        <div class="icons">
+            <a href = "https://www.facebook.com/alexalaman"><i class="fa fa-facebook"></i></a>
+            <a href = "https://www.instagram.com/alex_alaman"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/alex-alaman-0bb6001aa"><i class="fa fa-linkedin"></i></a>
+        </div>
+        <p>Made with <i class="fa fa-heart-o"></i> by Alex Alaman </p>
+    </section>
+
+    <!------ JavaScript pt meniu -------------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+</html>  
